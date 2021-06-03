@@ -1,0 +1,280 @@
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  height: 100%;
+}
+
+
+.imageOnMainPageWrapper {
+  margin-right: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(243, 166, 22, .6);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+
+.imageOnMainPage {
+  width: 450px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.mainText {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.connection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.connectionAdaptive {
+  display: none;
+}
+
+.question {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.btnInstagramWrapper {
+  position: relative;
+}
+
+.btnInstagram {
+  width: 170px;
+  height: 50px;
+  padding: 5px 7px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 8px rgba(255, 243, 11, .6);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px; 
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  transition: all .2s ease-in-out;
+  color: #000000;
+}
+
+.btnInstagram:hover {
+  background-color: var(--primary-color-hover);
+  transition: all .2s ease-in-out;
+}
+
+.btnInstagram:active {
+  background-color: var(--primary-color);
+}
+
+.iconInstagramWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconInstagram {
+  width: 30px;
+  height: 30px;
+}
+
+
+@media (max-width: 1025px) {
+
+  .wrapper {
+    padding-top: 20px;
+  }
+
+  .imageOnMainPageWrapper {
+    margin-right: 50px;
+  }
+
+  .imageOnMainPage {
+    width: 400px;
+    height: 400px;
+  }
+
+  .title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .mainText {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .question {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .imageOnMainPage {
+    width: 350px;
+    height: 350px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .mainText {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .question {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 769px) {
+
+  .wrapper {
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+
+  .col {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .connection {
+    display: none;
+  }
+
+  .connectionAdaptive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageOnMainPageWrapper {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .imageOnMainPage {
+    width: 300px;
+    height: 300px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .mainText {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .question {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
+
+  .imageOnMainPageWrapper {
+    margin-right: 20px;
+  }
+
+  .imageOnMainPage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .col {
+    flex-direction: row;
+    order: 1;
+  }
+}
+
+@media (max-width: 525px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .mainText {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .col {
+    flex-direction: column;
+  }
+
+  .imageOnMainPageWrapper {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .imageOnMainPage {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 426px) {
+
+  .title {
+    font-size: 26px;
+  }
+
+  .imageOnMainPage {
+    width: 180px;
+    height: 180px;
+  }
+}
