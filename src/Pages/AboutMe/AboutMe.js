@@ -21,18 +21,15 @@ export function AboutMe() {
           <div className={s.content}>
             <h3 className={s.title}>Обо мне</h3>
             <p className={s.description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-              molestias dolorum placeat beatae temporibus molestiae ducimus
-              debitis dolorem accusantium quam omnis non modi rerum quis dolore
-              alias deserunt sequi quo, iusto quod excepturi nisi. Veniam
-              tempore quaerat praesentium maiores laudantium explicabo nostrum
-              debitis quasi. Hic, quidem beatae impedit soluta neque vel optio
-              nihil nisi officia maxime nobis nulla ea nam dolorem vero
-              blanditiis? At, dolor quia. Eos minima optio id voluptatem nostrum
-              recusandae, cum rerum aperiam reprehenderit eaque, deserunt nemo
-              dolores quidem repudiandae blanditiis, accusantium voluptas?
-            </p>
-            <div className={s.images}>
+              Приветствую Вас! Вы зашли сюда в надежде найти ответ на актуальный
+              для вас вопрос? Я дам вам ответ! </p>
+              <p className={s.description}>Я Энес, практикующий таролог с
+              высшим психологическим образованием. Расклады на Таро в моем
+              исполнении – сжатые факты, четкие рекомендации, ожидаемая
+              вариативность событий. Я не маг, не чародей и не гадалка. Таро –
+              искусство прорицания, и я с радостью прорицаю для вас через потоки
+              мироздания.</p>
+              <div className={s.images}>
               <div className={s.imageWrapperMinWidth}>
                 <img className={s.img} src={photo2} alt="photo2" />
               </div>
@@ -40,22 +37,22 @@ export function AboutMe() {
                 <img className={s.img} src={photo1} alt="photo1" />
               </div>
             </div>
-            <p className={s.description}>
-              Voluptate saepe sequi numquam, inventore delectus voluptates omnis
-              ab nam. Adipisci explicabo quasi incidunt quaerat omnis nesciunt
-              labore, ipsa harum exercitationem perferendis! Nobis, fugiat minus
-              incidunt explicabo aspernatur id harum, excepturi doloribus ut
-              praesentium eos mollitia iste adipisci earum quod est, fugit
-              libero esse nostrum. Excepturi, molestiae quisquam omnis
-              praesentium error sit, non soluta nobis adipisci laborum nemo
-              culpa magnam quos blanditiis sequi ducimus dolore necessitatibus
-              labore quam accusamus autem? Molestias similique, at error quidem
-              minus, autem ab amet, repellat eveniet alias labore accusantium
-              aperiam vero perspiciatis maxime! Beatae non minima sunt,
-              reiciendis autem ratione voluptatum ipsa magnam optio! Aliquam nam
-              dignissimos maxime fugiat possimus. Possimus, ut. Quis facilis
-              itaque fuga quam, cupiditate dolorem.
-            </p>
+              <p className={s.description}>Советы раскладов Таро укажут вам верный путь,
+              предназначение, исход события и путь к мечте. Также карты укажут
+              на опасности и на способы избежать эти опасности. Раскладов
+              существует множество. В работе я использую свои авторские
+              методики, а также с уважением и благоговением перед бездной знаний
+              обращаюсь к раскладам великих мастеров. Таро – архетипичная
+              система, символьная азбука. Я читаю по ней, как по книге. Но не
+              воздействую на оппонента. Мантическая отрасль, к которой относится
+              Таро, не позволяет оказывать энергетического воздействия на
+              квирента. А значит, процесс расклада безопасен для вас, мой
+              уважаемый гость. Я готова помочь вам прямо сейчас, задавайте
+              вопрос! Используйте мудрость Таро во благо!</p>
+               
+            
+           
+           
           </div>
           <div className={s.col}>
             <div className={s.imageWrapper}>

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.selectWrapper {
+  position: relative;
+
+}
+
+.select {
+  padding: 10px;
+  margin-bottom: 7px;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  -webkit-appearance: none;
+
+}
+
+.inFocus {
+  box-shadow: 0 0 10px rgba(243, 166, 22);
+}
+
+
+.arrowWrapper {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: all .2s ease-in-out;
+}
+
+.arrowRotate {
+  transform: rotate(180deg);
+  transition: all .2s ease-in-out;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+}
+
+.error {
+  color: var(--primary-color-hover);
+  font-size: 14px;
+}
+
