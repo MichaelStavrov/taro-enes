@@ -4,6 +4,7 @@ import question1 from "../../Assets/images/1question.jpg";
 import questions3 from "../../Assets/images/3questions.jpg";
 import full from "../../Assets/images/full.jpg";
 import iconInstagram from "../../Assets/images/instagram.svg";
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -32,54 +33,66 @@ const services = [
   },
 ];
 
-
-
 export function Services() {
   return (
-    <section className={s.services}>
-      <Container>
-        <div className={s.wrapper}>
-          <h3 className={s.title}>Мои услуги</h3>
-          <div className={s.list}>
-            {services.map(({ id, name, image, description, price }) => (
-              <div className={s.item} key={id}>
-                <h4 className={s.itemTitle}>&#171;{name}&#187;</h4>
-                <div className={s.itemContent}>
-                  <div className={s.imageWrapper}>
-                    <img className={s.img} src={image} alt={image} />
-                  </div>
-                  <p className={s.description375w}>{description}</p>
-                  {/* <div className={s.price375w}>{price} &#8381;</div> */}
-                  <div className={s.col}>
-                    <p className={s.description}>{description}</p>
+    <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Гадания на таро онлайн в формате вопросов и развернутых раскладов"
+        />
+        <meta
+          name="keywords"
+          content="денежные расклады таро онлайн, бизнес расклады таро онлайн, любовные гадания таро онлайн, поиск предназначения онлайн"
+        />
+        <title>Вопросы расклады ответы таро онлайн</title>
+      </Helmet>
+      <section className={s.services}>
+        <Container>
+          <div className={s.wrapper}>
+            <h1 style={{ display: "none" }}>Гадания и расклады</h1>
+            <h2 className={s.title}>Мои услуги</h2>
+            <div className={s.list}>
+              {services.map(({ id, name, image, description, price }) => (
+                <div className={s.item} key={id}>
+                  <h3 className={s.itemTitle}>&#171;{name}&#187;</h3>
+                  <div className={s.itemContent}>
+                    <div className={s.imageWrapper}>
+                      <img className={s.img} src={image} alt={image} />
+                    </div>
+                    <p className={s.description375w}>{description}</p>
+                    {/* <div className={s.price375w}>{price} &#8381;</div> */}
+                    <div className={s.col}>
+                      <p className={s.description}>{description}</p>
 
-                    {/* <div className={s.price}>{price} &#8381;</div> */}
+                      {/* <div className={s.price}>{price} &#8381;</div> */}
+                    </div>
                   </div>
+                  <div className={s.price}>{price} &#8381;</div>
                 </div>
-                <div className={s.price}>{price} &#8381;</div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className={s.connection}>
+              <p className={s.question}>Задай любой вопрос прямо сейчас!</p>
+              <a
+                className={s.btnInstagram}
+                href="https://instagram.com/taroenes?utm_medium=copy_link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className={s.iconInstagramWrapper}>
+                  <img
+                    className={s.iconInstagram}
+                    src={iconInstagram}
+                    alt="instagram"
+                  />
+                </div>
+                Instagram
+              </a>
+            </div>
           </div>
-          <div className={s.connection}>
-            <p className={s.question}>Задай любой вопрос прямо сейчас!</p>
-            <a
-              className={s.btnInstagram}
-              href="https://instagram.com/taroenes?utm_medium=copy_link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className={s.iconInstagramWrapper}>
-                <img
-                  className={s.iconInstagram}
-                  src={iconInstagram}
-                  alt="instagram"
-                />
-              </div>
-              Instagram
-            </a>
-          </div>
-        </div>
-      </Container>
-    </section>
+        </Container>
+      </section>
+    </>
   );
 }

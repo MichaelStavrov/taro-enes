@@ -15,9 +15,9 @@ export function App() {
         <main className={s.main}>
           <Switch>
             <Route exact path="/" component={MainPage} />
-            <Route exact path="/about" component={AboutMe} />
-            <Route exact path="/services" component={Services} />
-            <Route exact path="/contacts" component={Contacts} />
+            <Route path="/about" component={AboutMe} />
+            <Route path="/services" component={Services} />
+            <Route path="/contacts" component={Contacts} />
           </Switch>
         </main>
         <Footer />

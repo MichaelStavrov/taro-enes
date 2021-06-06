@@ -4,6 +4,7 @@ import s from "./Contacts.module.css";
 // import "yup-phone";
 import { Container } from "../../Components/Container/Container";
 import iconInstagram from "../../Assets/images/instagram.svg";
+import { Helmet } from "react-helmet";
 // import { InputText } from "../../Components/InputText/InputText";
 // import { InputPhone } from "../../Components/InputPhone/InputPhone";
 // import { InputSelect } from "../../Components/InputSelect/InputSelect";
@@ -23,46 +24,75 @@ export function Contacts() {
   //   // jobType: "", // added for our select
   // };
   return (
-    <section className={s.contacts}>
-      <Container>
-        <div className={s.wrapper}>
-          <p className={s.mainText}>
-            Мы с вами немного познакомились, и я хочу сделать вам подарок!
-            Первый вопрос для вас совершенно бесплатный. Просто выберите удобный
-            способ связи и задайте его. Как правильно задать вопрос? Указать
-            имя, дату рождения. Приложить ваше фото Сформулировать запрос
-            максимально емко. Задать временной отрезок (неделя, месяц, год)
-            Желательно задавать открытые вопросы, так вы получите больше
-            информации от карт. Не знаете, как сформулировать вопрос для Таро?
-            Напишите мне по указанным контактам, и мы вместе найдем верное
-            оформление для вашего запроса. Используйте мудрость Таро во благо!
-          </p>
-          <div className={s.connection}>
-            <div className={s.container}>
-              <p className={s.row}>Задайте вопрос прямо сейчас</p>
-              <a
-                className={s.btnInstagram}
-                href="https://instagram.com/taroenes?utm_medium=copy_link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className={s.iconInstagramWrapper}>
-                  <img
-                    className={s.iconInstagram}
-                    src={iconInstagram}
-                    alt="instagram"
-                  />
-                </div>
-                Instagram
-              </a>
+    <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Задайте первый бесплатный вопрос картам таро прямо сейчас"
+        />
+        <meta
+          name="keywords"
+          content="заказать расклад таро онлайн, услуги таролога онлайн, гадания недорого онлайн, точные расклады таро онлайн"
+        />
+        <title>Закажите расклад таро онлайн</title>
+      </Helmet>
+      <section className={s.contacts}>
+        <Container>
+          <div className={s.wrapper}>
+            <h1 style={{ display: "none" }}>Заказать гадание</h1>
+            <p className={s.mainText}>
+              <span className={s.freeQuestion}>
+                Мы с вами немного познакомились, и я хочу сделать вам подарок!
+                <br />
+                Первый вопрос для вас совершенно бесплатный.
+              </span>
+            </p>
+            <h2 className={s.listTitle}>Как правильно задать вопрос?</h2>
+            <ol className={s.list}>
+              <li className={s.item}>Указать имя, дату рождения</li>
+              <li className={s.item}>Приложить ваше фото</li>
+              <li className={s.item}>Сформулировать запрос максимально емко</li>
+              <li className={s.item}>
+                Задать временной отрезок (неделя, месяц, год)
+              </li>
+            </ol>
+            <p className={s.mainText}>
+              Желательно задавать открытые вопросы, так вы получите больше
+              информации от карт.
+            </p>
+            <h3>Не знаете, как сформулировать вопрос для Таро?</h3>
+            <p className={s.mainText}>
+              Напишите мне по указанным контактам, и мы вместе найдем верное
+              оформление для вашего запроса.
+              <br />
+              Используйте мудрость Таро во благо!
+            </p>
+            <div className={s.connection}>
+              <div className={s.container}>
+                <p className={s.row}>Задайте вопрос прямо сейчас</p>
+                <a
+                  className={s.btnInstagram}
+                  href="https://instagram.com/taroenes?utm_medium=copy_link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={s.iconInstagramWrapper}>
+                    <img
+                      className={s.iconInstagram}
+                      src={iconInstagram}
+                      alt="instagram"
+                    />
+                  </div>
+                  Instagram
+                </a>
+              </div>
+              <p className={s.or}>ИЛИ</p>
+              <div className={s.container}>
+                <p className={s.row}>Пришлите свой вопрос мне на почту</p>
+                <p className={s.email}>TaroEnesHappy@gmail.ru</p>
+              </div>
             </div>
-            <p className={s.or}>ИЛИ</p>
-            <div className={s.container}>
-              <p className={s.row}>Пришлите свой вопрос мне на почту</p>
-              <p className={s.email}>n.b202@mail.ru</p>
-            </div>
-          </div>
-          {/* <Formik
+            {/* <Formik
             initialValues={initialValues}
             validationSchema={Yup.object({
               firstName: Yup.string()
@@ -92,7 +122,7 @@ export function Contacts() {
               }, 400);
             }}
           > */}
-          {/* <Form className={s.form}>
+            {/* <Form className={s.form}>
               <div className={s.field}>
                 <InputText
                   style={{
@@ -154,8 +184,9 @@ export function Contacts() {
               </button>
             </Form>
           </Formik> */}
-        </div>
-      </Container>
-    </section>
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }

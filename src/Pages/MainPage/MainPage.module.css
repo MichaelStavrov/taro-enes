@@ -17,11 +17,15 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(243, 166, 22, 0.6);
-  width: 400px;
-  height: 400px;
+  width: 315px;
+  height: 415px;
   border-radius: 30px;
   float: left;
   /* background-color: var(--primary-color); */
+}
+
+.imageOnMainPageWrapper2 {
+  display: none;
 }
 
 .imageOnMainPage {
@@ -44,8 +48,12 @@
 .mainText {
   font-size: 20px;
   line-height: 1.3;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   text-align: left;
+}
+
+.margin0 {
+  margin: 0;
 }
 
 .connection {
@@ -114,14 +122,6 @@
     padding-top: 20px;
   }
 
-  .imageOnMainPageWrapper {
-    margin-right: 50px;
-  }
-
-  /* .imageOnMainPage {
-    width: 400px;
-    height: 400px;
-  } */
 
   .title {
     margin-bottom: 15px;
@@ -142,7 +142,7 @@
 
 @media (max-width: 850px) {
   .imageOnMainPageWrapper {
-    width: 350px;
+    width: 275px;
     height: 350px;
     margin-right: 15px;
   }
@@ -185,7 +185,7 @@
   }
 
   .imageOnMainPageWrapper {
-    width: 300px;
+    width: 250px;
     height: 300px;
   }
 
@@ -216,9 +216,9 @@
     margin-bottom: 20px;
   }
 
-  .imageOnMainPageWrapper {
-    width: 250px;
-    height: 250px;
+  .imageOnMainPageWrapper, .imageOnMainPageWrapper2 {
+    width: 230px;
+    height: 300px;
   }
 
   .col {
@@ -236,19 +236,29 @@
   .mainText {
     font-size: 16px;
     line-height: 1.4;
-    margin: 0;
   }
+
+
 
   .col {
     flex-direction: column;
   }
 
   .imageOnMainPageWrapper {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 280px;
   }
 
-
+  .imageOnMainPageWrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(243, 166, 22, 0.6);
+    border-radius: 30px;
+    width: 280px;
+    height: 250px;
+    margin: 15px 0;
+  }
 }
 
 @media (max-width: 426px) {
@@ -257,8 +267,8 @@
   }
 
   .imageOnMainPageWrapper {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 230px;
   }
 }
 
@@ -267,7 +277,22 @@
     font-size: 26px;
   }
 
+  .content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   .imageOnMainPageWrapper {
-    display: none;
+    width: 220px;
+    height: 270px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .imageOnMainPageWrapper2 {
+    width: 260px;
+    height: 260px;
   }
 }
